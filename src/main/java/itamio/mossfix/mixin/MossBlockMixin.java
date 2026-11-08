@@ -4,7 +4,7 @@ import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelReader;
-import net.minecraft.world.level.block.MossBlock;
+import net.minecraft.world.level.block.BonemealableFeaturePlacerBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -15,7 +15,7 @@ import org.spongepowered.asm.mixin.injection.At;
  * requiring air above. In 26.3 the target class is
  * BonemealableFeaturePlacerBlock (was MossBlock before 1.21.2).
  */
-@Mixin(MossBlock.class)
+@Mixin(BonemealableFeaturePlacerBlock.class)
 public class MossBlockMixin {
     @WrapOperation(method = "isValidBonemealTarget",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/world/level/block/state/BlockState;isAir()Z"))
