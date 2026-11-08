@@ -4,7 +4,10 @@
   "version": "${version}",
   "name": "Moss Fix",
   "description": "Fixes moss by allowing spread under transparent blocks. Unofficial port of Moss Fix Remastered by gamma-02 (MIT) for Minecraft 26.3 (Fabric). See NOTICE for credit.",
-  "authors": ["Itamio", "gamma-02"],
+  "authors": [
+    "Itamio",
+    "gamma-02"
+  ],
   "contact": {
     "homepage": "https://github.com/Sekai0NI0itamio/MossFix263",
     "sources": "https://github.com/gamma-02/moss-fix-remastered",
@@ -12,7 +15,18 @@
   },
   "license": "MIT",
   "environment": "*",
-  "entrypoints": {"main": ["itamio.mossfix.MossFixMod"]},
-  "mixins": ["mossfix263.mixins.json"],
-  "depends": {"fabricloader": ">=0.20.1", "minecraft": "~26.3", "java": ">=25", "fabric-api": "*"}
+  "entrypoints": {
+    "main": [
+      "itamio.mossfix.MossFixMod"
+    ]
+  },
+  "mixins": [
+    "mossfix263.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.16.14",
+    "minecraft": ">=1.21.1 <1.22",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
 }
