@@ -1,0 +1,19 @@
+NOTICE
+
+Moss Fix (Itamio port for Minecraft 26.3)
+
+This mod is an unofficial port of "Moss Fix Remastered" by gamma-02
+(https://github.com/gamma-02/moss-fix-remastered, MIT, 549k downloads
+on Modrinth, max Minecraft 1.21.9).
+
+All credit for the original concept, design, and logic goes to
+gamma-02. This port was created by Itamio to bring the mod to
+Minecraft 26.3 (Fabric) because the original has not been updated
+to this version.
+
+Itamio does not take credit for any of the original assets or logic.
+The code was updated to be compatible with Minecraft 26.3 (Fabric).
+Port changes: the core bonemeal fix is preserved (target class is
+BonemealableFeaturePlacerBlock in 26.3, was MossBlock before
+1.21.2); the optional datapack spread system (cobblestone/sand) is
+not ported.
