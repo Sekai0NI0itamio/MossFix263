@@ -17,7 +17,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 @Mixin(MossBlock.class)
 public class MossBlockMixin {
     @Inject(method = "isValidBonemealTarget", at = @At("HEAD"), cancellable = true)
-    private void mossfix$shouldBonemeal(LevelReader level, BlockPos pos, BlockState state, CallbackInfoReturnable<Boolean> cir) {
+    private void mossfix$shouldBonemeal(LevelReader level, BlockPos pos, BlockState state, boolean flag, CallbackInfoReturnable<Boolean> cir) {
         BlockState above = level.getBlockState(pos.above());
         cir.setReturnValue(!above.isRedstoneConductor(level, pos.above()));
     }
