@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "itamio.mossfix.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MossBlockMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "refmap": "mossfix.refmap.json",
+  "minVersion": "0.8"
+}
